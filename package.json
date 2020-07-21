@@ -1,0 +1,63 @@
+{
+  "name": "rest-shop",
+  "version": "1.0.0",
+  "description": "A Node.js RESTful API Tutorial Project (Build a simple shop API)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "lint": "eslint .",
+    "lint-fix": "npm run lint -- --fix",
+    "pretest": "npm run lint",
+    "testmocha": "nyc mocha ./test", 
+    "xtest": "nodemon --exec 'npm run testmocha'"
+  }, 
+  "keywords": [
+    "node",
+    "restful",
+    "api"
+  ],
+  "author": "Hamid Hazrati",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "chai": "^4.2.0",
+    "eslint": "^5.2.0",
+    "eslint-config-google": "^0.9.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.19.4",
+    "nyc": "^12.0.2",
+    "sinon": "^6.3.5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "google"
+    ],
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 8
+    },
+    "rules": {
+      "max-len": [
+        2,
+        120,
+        4,
+        {
+          "ignoreUrls": true
+        }
+      ],
+      "no-console": 0
+    }
+  },
+  "eslintIgnore": [
+    "node_modules"
+  ]
+}
