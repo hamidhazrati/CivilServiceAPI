@@ -9,9 +9,9 @@
     "lint": "eslint .",
     "lint-fix": "npm run lint -- --fix",
     "pretest": "npm run lint",
-    "testmocha": "nyc mocha ./test", 
+    "testmocha": "nyc mocha ./test",
     "xtest": "nodemon --exec 'npm run testmocha'"
-  }, 
+  },
   "keywords": [
     "node",
     "restful",
@@ -22,6 +22,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "morgan": "^1.9.0",
+    "nodemon": "^1.19.4",
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
@@ -30,7 +31,6 @@
     "eslint": "^5.2.0",
     "eslint-config-google": "^0.9.1",
     "mocha": "^5.2.0",
-    "nodemon": "^1.19.4",
     "nyc": "^12.0.2",
     "sinon": "^6.3.5"
   },

@@ -56,5 +56,6 @@ router.get('/:city/:distance', (req, resp) => {
     handleResponse(city, distance, resp);
 });
 
+module.exports = router;
 exports.filterByDistance = filterByDistance;
 exports.handleResponse = handleResponse;
